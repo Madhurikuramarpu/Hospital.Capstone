@@ -1,1 +1,0 @@
-# HospitalMgnt_CapstoneProj
