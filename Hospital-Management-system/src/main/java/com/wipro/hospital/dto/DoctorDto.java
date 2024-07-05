@@ -10,9 +10,19 @@ public class DoctorDto {
 	private String specialization;
 	
 	
+	
+	
+	
+	public DoctorDto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public DoctorDto(int doctorId, String doctorName, String phoneNumber, String email, int yearsOfExperience,
 			String specialization) {
-		super();
+		
 		this.doctorId = doctorId;
 		this.doctorName = doctorName;
 		this.phoneNumber = phoneNumber;
@@ -21,11 +31,6 @@ public class DoctorDto {
 		this.specialization = specialization;
 	}
 
-
-	public DoctorDto() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 
 	public int getDoctorId() {
@@ -33,9 +38,11 @@ public class DoctorDto {
 	}
 
 
+
 	public void setDoctorId(int doctorId) {
 		this.doctorId = doctorId;
 	}
+
 
 
 	public String getDoctorName() {
@@ -43,9 +50,11 @@ public class DoctorDto {
 	}
 
 
+
 	public void setDoctorName(String doctorName) {
 		this.doctorName = doctorName;
 	}
+
 
 
 	public String getPhoneNumber() {
@@ -53,9 +62,11 @@ public class DoctorDto {
 	}
 
 
+
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
+
 
 
 	public String getEmail() {
@@ -63,9 +74,11 @@ public class DoctorDto {
 	}
 
 
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 
 
 	public int getYearsOfExperience() {
@@ -73,9 +86,11 @@ public class DoctorDto {
 	}
 
 
+
 	public void setYearsOfExperience(int yearsOfExperience) {
 		this.yearsOfExperience = yearsOfExperience;
 	}
+
 
 
 	public String getSpecialization() {
@@ -83,10 +98,10 @@ public class DoctorDto {
 	}
 
 
+
 	public void setSpecialization(String specialization) {
 		this.specialization = specialization;
 	}
 
-	
 	
 }
