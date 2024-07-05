@@ -1,10 +1,13 @@
 package com.wipro.hospital.entity;
 
 import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,6 +23,14 @@ public class Appointment {
     private String description;
     private String location;
 
+   @ManyToOne
+   @JoinColumn(name = "doctorId")
+   private Doctor doctor;
+   
+   
+   @ManyToOne
+   @JoinColumn(name = "patientId")
+   private Patient patient;
     
     public Appointment() {
 		super();

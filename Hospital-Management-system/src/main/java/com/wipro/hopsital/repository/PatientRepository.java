@@ -8,4 +8,6 @@ import com.wipro.hospital.entity.Patient;
 @Repository
 public interface PatientRepository extends JpaRepository<Patient, Long>{
 
+	Patient findById(Patient patient);
+
 }

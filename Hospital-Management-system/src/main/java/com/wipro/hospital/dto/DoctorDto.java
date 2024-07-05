@@ -2,6 +2,7 @@ package com.wipro.hospital.dto;
 
 public class DoctorDto {
 	
+	public int getDoctorId;
 	private int doctorId;
 	private String doctorName;
 	private String phoneNumber;

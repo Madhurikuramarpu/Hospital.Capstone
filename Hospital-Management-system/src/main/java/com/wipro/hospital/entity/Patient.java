@@ -1,10 +1,13 @@
 package com.wipro.hospital.entity;
 
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -24,6 +27,10 @@ public class Patient {
     private String medicalHistory;
     private String symptoms;	
     private String nature_of_visit;
+    
+    @OneToOne(mappedBy = "patient",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    private MedicalRecord medicalRecord;
+    
 
 	public Patient(Long patientId, String username, String password, String fullName, int age,
 			String gender, String contactNumber, String appointments, String medicalHistory, String symptoms,

@@ -8,4 +8,6 @@ import com.wipro.hospital.entity.MedicalRecord;
 @Repository
 public interface MedicalRecordRepository extends JpaRepository<MedicalRecord, Long>{
 
+	MedicalRecord findById(MedicalRecord medicalRecord);
+
 }

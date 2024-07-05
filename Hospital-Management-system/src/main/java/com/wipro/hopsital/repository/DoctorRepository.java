@@ -8,4 +8,10 @@ import com.wipro.hospital.entity.Doctor;
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Integer>{
 
+	Doctor findById(Doctor doctor);
+
+	void deleteById(Long id);
+
+	
+
 }
