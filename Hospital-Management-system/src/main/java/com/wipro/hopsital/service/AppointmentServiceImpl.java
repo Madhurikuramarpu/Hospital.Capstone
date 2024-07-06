@@ -67,7 +67,7 @@ public  abstract class AppointmentServiceImpl implements AppointmentService {
     public String deleteAppointment(Long id) {
 				
 		appointmentRepository.deleteById(id);
-		return" delete success";
+		return "delete success";
 		
 	}
 

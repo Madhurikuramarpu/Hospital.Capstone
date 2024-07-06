@@ -13,4 +13,14 @@ public interface PatientService {
 
 	Patient updatePatient(PatientDto patientDto);
 
+	List<Patient> getAllPatients();
+
+	Patient getPatientById(Long id);
+
+	Patient createPatient(Patient patient);
+
+	Patient updatePatient(Long id, Patient patientDetails);
+
+	public String deletePatient(Long id);
+
 }
